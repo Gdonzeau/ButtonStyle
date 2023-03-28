@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oXi-ao-aAA">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Bouton mvt-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ButtonsViewController" customModule="ButtonStyle" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x7c-td-jD5">
+                                <rect key="frame" x="158" y="362" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="8ZW-tN-6tX"/>
+                                    <constraint firstAttribute="width" constant="80" id="WLa-H9-jM6"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="button01Push:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dke-aq-qJD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="x7c-td-jD5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="158" id="26J-Lt-k9C"/>
+                            <constraint firstItem="x7c-td-jD5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="315" id="AxM-bG-mVg"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Bouton mvt" id="s0W-lY-0tm"/>
+                    <connections>
+                        <outlet property="button01" destination="x7c-td-jD5" id="gLa-0n-ECe"/>
+                        <outlet property="button01Height" destination="8ZW-tN-6tX" id="fCL-iK-XhQ"/>
+                        <outlet property="button01Width" destination="WLa-H9-jM6" id="DWZ-oP-uwg"/>
+                        <outlet property="positionButton01X" destination="26J-Lt-k9C" id="6a8-g7-v4g"/>
+                        <outlet property="positionButton01Y" destination="AxM-bG-mVg" id="TPf-Sv-2uB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-46" y="-212"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="bwh-K6-qXd">
+            <objects>
+                <tabBarController id="oXi-ao-aAA" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7t5-6E-aVi">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" systemColor="systemBlueColor"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="c7A-WQ-Ny1"/>
+                        <segue destination="HR8-3d-eFi" kind="relationship" relationship="viewControllers" id="TeS-Ty-n0q"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uEe-7y-7so" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-895" y="15"/>
+        </scene>
+        <!--Boutons multiples-->
+        <scene sceneID="5Bk-o4-LpG">
+            <objects>
+                <viewController id="HR8-3d-eFi" customClass="MultipleButtonsViewController" customModule="ButtonStyle" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4SK-Ng-GQ7">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="x3I-fu-Rwe">
+                                <rect key="frame" x="112.66666666666669" y="212" width="165" height="420"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="dnb-uk-dWt">
+                                        <rect key="frame" x="0.0" y="0.0" width="165" height="80"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E4Y-el-ff2">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="8VD-TC-Nee"/>
+                                                    <constraint firstAttribute="width" constant="80" id="PN3-aO-dj1"/>
+                                                </constraints>
+                                                <size key="titleShadowOffset" width="5" height="5"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                <connections>
+                                                    <action selector="button01:" destination="rSj-S3-SMU" eventType="touchUpInside" id="KoU-7h-zZV"/>
+                                                    <action selector="pressButton:" destination="HR8-3d-eFi" eventType="touchUpInside" id="9cg-oB-6C4"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GAB-50-7y1">
+                                                <rect key="frame" x="84.999999999999986" y="0.0" width="80.000000000000014" height="80"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="2qd-Cz-CY6"/>
+                                                    <constraint firstAttribute="height" constant="80" id="MPi-GW-bP0"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Button" subtitle="Bouh" titleAlignment="center"/>
+                                                <connections>
+                                                    <action selector="pressButton:" destination="HR8-3d-eFi" eventType="touchUpInside" id="6n4-a9-zRy"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="rj2-Bz-8EI">
+                                        <rect key="frame" x="0.0" y="85" width="165" height="80"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uNt-cg-svD">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="ABC-mA-Jbu"/>
+                                                    <constraint firstAttribute="height" constant="80" id="otW-ME-urH"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                <connections>
+                                                    <action selector="pressButton:" destination="HR8-3d-eFi" eventType="touchUpInside" id="ajQ-9r-SKn"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Xp-9F-55C">
+                                                <rect key="frame" x="84.999999999999986" y="0.0" width="80.000000000000014" height="80"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="VzF-r4-XZb"/>
+                                                    <constraint firstAttribute="height" constant="80" id="gdA-VE-0Pn"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                <connections>
+                                                    <action selector="pressButton:" destination="HR8-3d-eFi" eventType="touchUpInside" id="UIv-sR-3Bh"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="F3J-jN-WgL">
+                                        <rect key="frame" x="0.0" y="170" width="165" height="80"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5s1-Gc-6AA">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="mgm-vq-ZmX"/>
+                                                    <constraint firstAttribute="width" constant="80" id="wT3-NU-m0s"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                <connections>
+                                                    <action selector="pressButton:" destination="HR8-3d-eFi" eventType="touchUpInside" id="Psk-90-UGp"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ma4-8s-Hsi">
+                                                <rect key="frame" x="84.999999999999986" y="0.0" width="80.000000000000014" height="80"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="20c-ck-Yzt"/>
+                                                    <constraint firstAttribute="height" constant="80" id="Eyb-Zc-tzp"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                <connections>
+                                                    <action selector="pressButton:" destination="HR8-3d-eFi" eventType="touchUpInside" id="lbb-v3-4u9"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Cif-br-XgC">
+                                        <rect key="frame" x="0.0" y="255" width="165" height="80"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OBR-Qh-G4t">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="VpX-bd-smP"/>
+                                                    <constraint firstAttribute="height" constant="80" id="hmM-c0-esJ"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                <connections>
+                                                    <action selector="pressButton:" destination="HR8-3d-eFi" eventType="touchUpInside" id="79c-vt-yKc"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qa8-xn-Dcn">
+                                                <rect key="frame" x="84.999999999999986" y="0.0" width="80.000000000000014" height="80"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="Bxx-ue-kpY"/>
+                                                    <constraint firstAttribute="width" constant="80" id="IaW-KQ-Lfc"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                <connections>
+                                                    <action selector="pressButton:" destination="HR8-3d-eFi" eventType="touchUpInside" id="Ce5-ai-HLB"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="iAr-fj-na7">
+                                        <rect key="frame" x="0.0" y="340" width="165" height="80"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1VH-DE-Flu">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="1eN-Fy-VNL"/>
+                                                    <constraint firstAttribute="width" constant="80" id="ICI-Hp-gEa"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                <connections>
+                                                    <action selector="pressButton:" destination="HR8-3d-eFi" eventType="touchUpInside" id="OyW-7J-gpU"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hQg-iB-EfL">
+                                                <rect key="frame" x="84.999999999999986" y="0.0" width="80.000000000000014" height="80"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="3Fp-ao-Kbg"/>
+                                                    <constraint firstAttribute="height" constant="80" id="yvu-RE-OHB"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                <connections>
+                                                    <action selector="pressButton:" destination="HR8-3d-eFi" eventType="touchUpInside" id="P4O-QH-RJV"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4vc-kM-xu2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="x3I-fu-Rwe" firstAttribute="centerY" secondItem="4SK-Ng-GQ7" secondAttribute="centerY" id="Ew2-9S-4nk"/>
+                            <constraint firstItem="x3I-fu-Rwe" firstAttribute="centerX" secondItem="4SK-Ng-GQ7" secondAttribute="centerX" id="HPz-Em-uDk"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Boutons multiples" id="eIQ-60-sUb"/>
+                    <connections>
+                        <outlet property="button01" destination="E4Y-el-ff2" id="EO6-OX-uG8"/>
+                        <outlet property="button02" destination="GAB-50-7y1" id="dFw-HO-eRD"/>
+                        <outlet property="button03" destination="uNt-cg-svD" id="8TC-Be-wgy"/>
+                        <outlet property="button04" destination="9Xp-9F-55C" id="VaU-da-8Rg"/>
+                        <outlet property="button05" destination="5s1-Gc-6AA" id="EJ4-v0-g0r"/>
+                        <outlet property="button06" destination="ma4-8s-Hsi" id="GqN-D2-FKf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gqn-wq-3hM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="rSj-S3-SMU" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-46.153846153846153" y="471.32701421800948"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
